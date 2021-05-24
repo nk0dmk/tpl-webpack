@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Chromium",
+            "type": "pwa-chrome",
+            "runtimeExecutable": "/usr/bin/chromium-browser",
+            "runtimeArgs": [
+              "--new-window",
+            //   "-user-data-dir=${workspaceFolder}/DevProfile",
+              "-user-data-dir=/tmp/nko/DevProfile",
+            "--disable-background-networking"
+            ],
+            "request": "launch",
+            "file": "${workspaceFolder}/dist/index.html"
+        },
+    ]
+}
